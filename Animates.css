@@ -1,0 +1,163 @@
+/* ========================================
+   FONTS
+======================================== */
+
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("./Assets/Sharp-Grotesk.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap");
+
+
+/* ========================================
+   ROOT VARIABLES
+======================================== */
+
+:root {
+  --bg: #e6ebf2;
+
+  --text-primary: #2d3748;
+  --text-secondary: #7a8599;
+
+  --accent: #8f7cff;
+
+  --bs-body-font: "Instrument Sans", sans-serif;
+  --bs-heading-font: "Sharp Grotesk", sans-serif;
+}
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   BASE LAYOUT
+======================================== */
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.container {
+  text-align: center;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+  padding: 4rem 2rem;
+  border-radius: 28px;
+  background: #e6ebf2;
+  
+  box-shadow:
+      6px 6px 12px #c9d1dc,
+      -6px -6px 12px #ffffff;
+  
+  text-align: center;
+  transition: all 0.3s ease;
+
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+h1 {
+  font-family: "Sharp Grotesk", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+
+  color: #eef2f7;
+
+  text-shadow:
+    -1px -1px 2px rgba(255, 255, 255, 0.9),
+     1.5px 1.5px 3px rgba(180, 190, 205, 0.5);
+
+  animation: jelly 4s ease-in-out infinite;
+}
+
+h2 {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+@keyframes jelly {
+  0%, 70%, 100% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  75%  { transform: scaleX(1.15) scaleY(0.85); }
+  80%  { transform: scaleX(0.9) scaleY(1.1); }
+  85%  { transform: scaleX(1.07) scaleY(0.93); }
+  90%  { transform: scaleX(0.96) scaleY(1.04); }
+  95%  { transform: scaleX(1.015) scaleY(0.985); }
+}
+
+
+/* ========================================
+   TABLET BREAKPOINT
+======================================== */
+
+@media (min-width: 768px) {
+  /* Reserved for tablet styles */
+}
+
+
+/* ========================================
+   DESKTOP BREAKPOINT
+======================================== */
+
+@media (min-width: 1024px) {
+  .hero {
+    box-shadow:
+      12px 12px 24px #c9d1dc,
+      -12px -12px 24px #ffffff;
+  }
+  
+  h1 {
+    font-size: 5rem;
+
+    text-shadow:
+      -2px -2px 4px rgba(255, 255, 255, 0.9),
+       3px 3px 6px rgba(180, 190, 205, 0.6);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
