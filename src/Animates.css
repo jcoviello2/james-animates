@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Sharp Grotesk";
-  src: url("./Assets/Sharp-Grotesk.ttf") format("truetype");
+  src: url("/Sharp-Grotesk.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
