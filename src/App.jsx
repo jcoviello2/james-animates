@@ -87,7 +87,7 @@ useEffect(() => {
       <div className="footer-nav reveal">
         <a href="https://www.instagram.com/coviello.design/" className="footer-item" target="_blank" rel="noopener noreferrer">illustration</a>
         <a href="https://coviellodesign.com" className="footer-item" target="_blank" rel="noopener noreferrer">websites</a>
-        <a href="/public/JamesCoviello_Resume_2026.pdf" className="footer-item" target="_blank" rel="noopener noreferrer">resume</a>
+        <a href="/JamesCoviello_Resume_2026.pdf" className="footer-item" target="_blank" rel="noopener noreferrer">resume</a>
       </div>
 
       <div className="site-credit">
